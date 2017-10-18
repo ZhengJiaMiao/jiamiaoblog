@@ -1,0 +1,86 @@
+/* Author: xiaozheng */
+body, h1, h2, h3, h4, h5, h6, dl, dd, p, hr {
+	margin: 0;
+}
+button, option, textarea, td {
+	padding: 0;
+}
+ul, ol, input {
+	margin: 0;
+	padding: 0;
+}
+ul, ol {
+	list-style-type: none;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+strong, b, h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+em, i {
+	font-style: normal;
+}
+button {
+	border: none;
+}
+/* 在a标签中放置img标签后，在IE10以及之下版本中，img会出现2px的边框
+*/
+img {
+	border: 0;
+	vertical-align: middle;
+}
+input, textarea, select {
+	outline: none;
+}
+:focus{
+	outline:0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+textarea {
+	resize: none;
+}
+/* 
+::-ms-clear 是文本清除按钮，也就是input右方的叉叉,
+::-ms-reveal是密码查看按钮，也就密码框右边的小眼睛。
+*/
+::-ms-clear, ::-ms-reveal {
+	display: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+	color: #999 !important; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: #999 !important; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+	color: #999 !important; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	color: #999 !important; 
+} 
+/*去掉苹果安卓系统点击时的灰色遮盖和边框*/
+a ,button, input, textarea {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.l {
+	float: left;
+}
+.r {
+	float: right;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}

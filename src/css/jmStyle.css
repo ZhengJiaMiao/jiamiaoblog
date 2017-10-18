@@ -1,0 +1,233 @@
+body {
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    min-width: 1200px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* jm-hd start */
+.jm-hd {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.jm-hd .logo {
+    height: 40px;
+    padding: 5px;
+}
+.logo a {
+    display: block;
+    height: 100%;
+    font-size: 0;
+}
+.logo  img {
+    height: 100%;
+}
+.jm-hd .nav-level-1 > li {
+    float: left;
+    position: relative;
+}
+.jm-hd .nav-level-1 > li > a {
+    display: block;
+    float: left;
+    padding: 0 10px;
+    color: #666;
+    line-height: 50px;
+}
+.jm-hd .nav-level-1 > li > a:hover {
+    color: #45B6F7;
+}
+.jm-hd .nav-level-2 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 6px 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 32px;
+    width: 132px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.jm-hd .nav-level-2  a {
+    display: block;
+    padding: 0 15px;
+    color: #666;
+}
+.jm-hd .nav-level-2  a:hover {
+    background-color: #f6f6f6;
+    color: #45B6F7;
+}
+.jm-hd .nav-level-1 > li:hover .nav-level-2 {
+    display: block;
+}
+/* jm-hd end */
+
+/* jm-main start */
+.jm-main {
+    padding-top: 20px;
+}
+.main-l {
+    width: 860px;
+    float: left;
+}
+/* list-box列表 start */
+.list-box {
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.list-hd {
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 5px 15px;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+}
+.list-hd p:before {
+    display: block;
+    left: 0;
+    top: 11px;
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #3498db;
+}
+.list-item {
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+.list-item .pic {
+    width: 230px;
+    height: 160px;
+    background: #f8f8f8;
+}
+.list-item .pic > a {
+    display: table-cell;
+    width: 230px;
+    height: 160px;
+    text-align: center;
+    vertical-align: middle;
+}
+.list-item .pic img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.list-item .info {
+    width: 570px;
+    margin-left: 20px;
+}
+.list-item .info .title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #666;
+}
+.list-item .info .title:hover {
+    color: #45B6F7;
+}
+.list-item .info .tip {
+    color: #fff;
+    background-color: #45BCF9;
+    padding: 3px 6px;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-right: 12px;
+    position: relative;
+}
+.list-item .info .tip:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: -4px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 4px solid #45BCF9;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.list-item .subTitle {
+    margin-top: 10px;
+}
+.list-item .subTitle div {
+    margin-right: 20px;
+}
+.list-item .subTitle span {
+    color: #999;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.list-item .subTitle i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon.png);
+    vertical-align: middle;
+}
+.list-item .subTitle .time i {
+    background-position: 0 0;
+}
+.list-item .subTitle .author i {
+    background-position: 0 -20px;
+}
+.list-item .subTitle .readNum i {
+    background-position: 0 -40px;
+}
+.list-item .info .note {
+    font-size: 12px;
+    color: #999;
+    word-wrap: break-word;
+    line-height: 20px;
+    margin-top: 10px;
+}
+/* list-box列表 end */
+
+/* page分页 start */
+.page {
+    text-align: center;
+    padding: 20px;
+}
+.page a {
+    display: inline-block;
+    width: 32px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    background-color: #eee;
+    color: #666;
+    font-size: 12px;
+    margin: 0 2px;
+    transition: all .3s ease-in;
+}
+.page a.prev,
+.page a.next {
+    width: 60px;
+}
+.page a:hover {
+    background-color: #45B6F7;
+    color: #fff;
+}
+/* page分页 end */
+.main-aside {
+    float: right;
+    width: 320px;
+}
+/* jm-main end */
